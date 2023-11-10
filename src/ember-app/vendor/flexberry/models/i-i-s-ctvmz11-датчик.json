@@ -1,0 +1,78 @@
+﻿{
+  "name": "IISCtvmz11Датчик",
+  "modelName": "i-i-s-ctvmz11-датчик",
+  "className": "Датчик",
+  "nameSpace": "IIS.Ctvmz11",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "погрешность",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "производ",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "контроллер",
+      "relatedTo": "i-i-s-ctvmz11-контроллер",
+      "inverse": "датчик"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДатчикE",
+      "modelName": "i-i-s-ctvmz11-датчик",
+      "attrs": [
+        {
+          "name": "погрешность",
+          "caption": "Погрешность",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "производ",
+          "caption": "Производ",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "id",
+          "caption": "Id",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

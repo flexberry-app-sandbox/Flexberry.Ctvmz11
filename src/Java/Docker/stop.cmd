@@ -1,0 +1,1 @@
+docker-compose -p ctvmz11-java down

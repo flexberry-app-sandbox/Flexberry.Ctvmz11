@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Ctvmz11",
+  "applicationTitle": "Ctvmz11",
+  "items": [
+    {
+      "link": null,
+      "menuName": "ctvmz11",
+      "caption": "Ctvmz11",
+      "title": "Ctvmz11",
+      "children": [
+        {
+          "link": "i-i-s-ctvmz11-контроллер-l",
+          "menuName": null,
+          "caption": "Контроллер",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ctvmz11-темпа-устан-l",
+          "menuName": null,
+          "caption": "Темпа устан",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

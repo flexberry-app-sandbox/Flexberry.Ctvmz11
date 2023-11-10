@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-ctvmz11-контроллер-e",
+  "editForm": "i-i-s-ctvmz11-контроллер-e",
+  "external": false,
+  "caption": "Контроллер",
+  "name": "IISCtvmz11КонтроллерL",
+  "className": "КонтроллерL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ctvmz11-контроллер",
+      "modelProjection": "КонтроллерL"
+    }
+  ]
+}

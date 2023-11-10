@@ -1,0 +1,97 @@
+﻿{
+  "name": "IISCtvmz11Контроллер",
+  "modelName": "i-i-s-ctvmz11-контроллер",
+  "className": "Контроллер",
+  "nameSpace": "IIS.Ctvmz11",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "состояние",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "темпаУстан",
+      "relatedTo": "i-i-s-ctvmz11-темпа-устан",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "датчик",
+      "relatedTo": "i-i-s-ctvmz11-датчик",
+      "inverse": "контроллер"
+    }
+  ],
+  "projections": [
+    {
+      "name": "КонтроллерE",
+      "modelName": "i-i-s-ctvmz11-контроллер",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "состояние",
+          "caption": "Состояние",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ДатчикE",
+          "caption": "Датчик",
+          "name": "датчик",
+          "relatedTo": "i-i-s-ctvmz11-датчик",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "КонтроллерL",
+      "modelName": "i-i-s-ctvmz11-контроллер",
+      "attrs": [
+        {
+          "name": "id",
+          "caption": "Id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "состояние",
+          "caption": "Состояние",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

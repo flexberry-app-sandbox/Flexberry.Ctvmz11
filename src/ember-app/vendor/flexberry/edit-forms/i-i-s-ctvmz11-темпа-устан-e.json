@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Темпа устан",
+  "name": "IISCtvmz11ТемпаУстанE",
+  "className": "ТемпаУстанE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ctvmz11-темпа-устан",
+      "modelProjection": "ТемпаУстанE"
+    }
+  ]
+}
